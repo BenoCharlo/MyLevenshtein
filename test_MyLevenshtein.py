@@ -9,5 +9,6 @@ class TestLevenshtein(unittest.TestCase):
         self.assertEqual(MyLevenshtein.substitution("cadeau", "radeau"), 1)
         self.assertEqual(MyLevenshtein.substitution("chien", "chien"), 0)
 
-    if __name__ == "__main__":
-        unittest.main()
+
+if __name__ == "__main__":
+    unittest.main()
