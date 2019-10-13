@@ -4,7 +4,7 @@ def substitution(text1, text2):
     reference_text = list(text1)
     new_text = list(text2)
 
-    # assert reference_text == new_text
+    assert reference_text == new_text
     levenshtein_distance = 0
 
     for i, letter in enumerate(reference_text):
@@ -14,7 +14,7 @@ def substitution(text1, text2):
     return levenshtein_distance
 
 
-def insertion(text1, text2):
+def deletion(text1, text2):
     """Length of text1 is greater than length of text2"""
 
     reference_text = list(text1)
@@ -31,14 +31,14 @@ def insertion(text1, text2):
     return levenshtein_distance
 
 
-def deletion(text1, text2):
+def insertion(text1, text2):
     """Length of text2 is greater than length of text1"""
 
     reference_text = list(text1)
     new_text = list(text2)
 
     assert reference_text < new_text
-    levenshtein_distance = en(new_text) - len(reference_text)
+    levenshtein_distance = len(new_text) - len(reference_text)
     new_text = new_text[: len(reference_text)]
 
     for i, letter in enumerate(reference_text):
