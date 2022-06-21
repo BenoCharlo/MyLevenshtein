@@ -3,5 +3,5 @@ attrs==19.2.0
 black==19.3b0
 certifi==2019.9.11
 Click==7.0
-numpy==1.17.3
+numpy==1.22.0
 toml==0.10.0
